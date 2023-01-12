@@ -165,4 +165,4 @@ main.sh
 *Pipfile.lock
 EEMS/LAB_SYSTEM/config.py
 kansei_ver/config.py
-.mp3
+*.mp3
