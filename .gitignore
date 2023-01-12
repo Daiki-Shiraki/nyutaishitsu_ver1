@@ -164,5 +164,6 @@ main.sh
 *Pipfile
 *Pipfile.lock
 EEMS/LAB_SYSTEM/config.py
+EEMS/LAB_SYSTEM/receive.py
 kansei_ver/config.py
 *.mp3

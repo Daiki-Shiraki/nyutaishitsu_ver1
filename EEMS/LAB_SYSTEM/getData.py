@@ -3,6 +3,7 @@ import requests
 import json
 import datetime
 from LAB_SYSTEM import app
+import config
 
 dt = datetime.datetime.today() 
 
@@ -19,8 +20,7 @@ class Student:
         self.status=status
         self.grade=grade
 def getData():
-    url = "https://script.google.com/macros/s/AKfycbwbVNHmNbOYjjM012kdpWcNuR87HHjqEBkGxt3gnlvCzEKEC8DLMxDfytNbDooSMeTQbw/exec"
-    response = requests.get(url)
+    response = requests.get(config.GetURL)
     return response.text
 
 def getTime():

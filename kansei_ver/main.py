@@ -6,6 +6,7 @@ import getData
 #import testlogin
 import threading
 import time
+import config
 idbox = []
 #ffff = 0
 
@@ -17,13 +18,11 @@ def postData(data):
     payload = {
         "data": data
     }
-    #url = "https://script.google.com/macros/s/AKfycbxfqrwe7hTbVKLWxf40Fysqc4QNan2x_L3-pQO8_NkWCIKRL5z9/exec"
-    url = "https://script.google.com/macros/s/AKfycbwlwCtvzQuE8Et2__ZiXw2GOwzCDs3fvjSw312q-AT5Mt5x3BU/exec"
     headers = {
         'Content-Type': 'application/json',
     }
     
-    response = requests.post(url, data=json.dumps(payload), headers=headers)
+    response = requests.post(config.URL, data=json.dumps(payload), headers=headers)
     #DB = getData.getData()
     #print(data)
     #for db in DB:

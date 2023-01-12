@@ -1,5 +1,6 @@
 import requests
 import json
+import config
 
 def postData(data):
     if(data is None):
@@ -9,11 +10,11 @@ def postData(data):
     payload = {
         "data": data
     }
-    url = "https://script.google.com/macros/s/AKfycbwlwCtvzQuE8Et2__ZiXw2GOwzCDs3fvjSw312q-AT5Mt5x3BU/exec"
+
     headers = {
         'Content-Type': 'application/json',
     }
-    response = requests.post(url, data=json.dumps(payload), headers=headers)
+    response = requests.post(config.PostURL, data=json.dumps(payload), headers=headers)
     if(response.status_code == 200 and response.text == "success"):
         print("post success!")
         return True
