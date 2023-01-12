@@ -1,0 +1,31 @@
+main{
+    display: flex;
+}
+.main{
+    margin: 10px 10%;
+}
+.in{
+    flex: 1;
+    background:rgb(214, 250, 255); 
+    border: 5px solid rgb(47, 225, 248);
+    border-radius: 10px; 
+    
+    -webkit-border-radius: 10px;
+    
+    -moz-border-radius: 10px;
+    margin:10px;
+    padding:3%;
+}
+.out{
+    flex: 1;
+    background:rgb(255, 232, 217);
+    border: 5px solid rgb(253, 174, 121);
+    border-radius: 10px; 
+    
+    -webkit-border-radius: 10px;
+    
+    -moz-border-radius: 10px;
+
+    margin:10px;
+    padding:3%;
+}

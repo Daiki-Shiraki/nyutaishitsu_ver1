@@ -164,5 +164,5 @@ main.sh
 *Pipfile
 *Pipfile.lock
 EEMS/LAB_SYSTEM/config.py
-EEMS/kansei_ver/config.pyg
+kansei_ver/config.py
 .mp3
