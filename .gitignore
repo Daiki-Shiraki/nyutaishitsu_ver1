@@ -160,3 +160,9 @@ cython_debug/
 #.idea/
 
 main.sh
+.vscode
+*Pipfile
+*Pipfile.lock
+EEMS/LAB_SYSTEM/config.py
+EEMS/kansei_ver/config.pyg
+.mp3
